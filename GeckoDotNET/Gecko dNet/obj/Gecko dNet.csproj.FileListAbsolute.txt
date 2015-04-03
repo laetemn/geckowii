@@ -268,3 +268,20 @@ F:\Wii\googlecode\geckowii\Gecko dNet\obj\Release\GeckoApp.WatchDialog.resources
 F:\Wii\googlecode\geckowii\Gecko dNet\obj\Release\Gecko dNet.csproj.GenerateResource.Cache
 F:\Wii\googlecode\geckowii\Gecko dNet\obj\Release\Gecko dNet.exe
 F:\Wii\googlecode\geckowii\Gecko dNet\obj\Release\Gecko dNet.pdb
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\bin\Release\Gecko dNet.exe.config
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\Gecko dNet.exe
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\Gecko dNet.pdb
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\ResolveAssemblyReference.cache
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.external.AddressTextBox.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.BPList.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.external.HistoryTextBox.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.GCTWizard.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.InputBox.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.MainForm.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.NoteSheets.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.NotePage.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.Properties.Resources.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.RegisterDialog.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.ValueInput.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\GeckoApp.WatchDialog.resources
+D:\projects\geckowii\GeckoDotNET\Gecko dNet\obj\Release\Gecko dNet.csproj.GenerateResource.Cache
