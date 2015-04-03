@@ -104,6 +104,9 @@
     </Compile>
     <Compile Include="globfunc.cs" />
     <Compile Include="IconHelper.cs" />
+    <Compile Include="IGeckoDevice.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="inputbox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +211,7 @@
     <Compile Include="Screenshots.cs" />
     <Compile Include="SearchHistoryManager.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="TCPGecko.cs" />
     <Compile Include="USBGecko.cs" />
     <Compile Include="ValueInput.cs">
       <SubType>Form</SubType>

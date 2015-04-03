@@ -126,7 +126,21 @@ namespace GeckoApp
             UInt32 offset = cAddress - sAddress;
             try
             {
-                gecko.Dump(sAddress, sAddress + 0x100, miniDump);
+                try
+                {
+                    if (gecko.connected)
+                    {
+                        gecko.Dump(sAddress, sAddress + 0x100, miniDump);
+                    }
+                }
+                catch (EUSBGeckoException e)
+                {
+                    exceptionHandling.HandleException(e);
+//                     MessageBox.Show("USBGecko not connected!\n", "Update error",
+//                      MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    miniDump.SetLength(0x100);
+                }
+
 
                 //gView.Rows.Add(16);
                 // Only clear and re-load gView.Rows when it's != 16
@@ -232,6 +246,11 @@ namespace GeckoApp
             {
                 exceptionHandling.HandleException(e);
             }
+            catch
+            {
+                MessageBox.Show("Unknown error while updating memory view!\n", "Update error",
+                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private String PrettyFloat(Single val)
@@ -328,7 +347,9 @@ namespace GeckoApp
                     pokeAddress.Text = GlobalFunctions.toHex(addr);
                     try
                     {
-                        UInt32 locValue = gecko.peek(addr);
+                        UInt32 locValue = 0;
+                        if (gecko.connected)
+                            locValue = gecko.peek(addr);
                         pokeValue.Text = GlobalFunctions.toHex(locValue);
                         fpValue.Text = GlobalFunctions.UIntToSingle(locValue).ToString("G6");
                     }
@@ -366,6 +387,13 @@ namespace GeckoApp
             if (!found)
             {
                 throw new Exception("Memory area could not be acquired!");
+            }
+
+            if (!gecko.connected)
+            {
+//                 MessageBox.Show("USBGecko not connected!\n", "Update error",
+//                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
             bool valueFound = false;

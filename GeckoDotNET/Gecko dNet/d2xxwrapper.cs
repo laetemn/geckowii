@@ -5,6 +5,8 @@ using System.Runtime.InteropServices;
 
 using Microsoft.Win32.SafeHandles;
 
+using FTDIUSBGecko;
+
 using DWORD = System.UInt32;
 using FT_Result = System.UInt32;
 using FT_Handle = System.UInt32;
@@ -33,7 +35,7 @@ namespace D2XXDirect
         FT_OTHER_ERROR
     }
 
-    public class D2XXWrapper
+    public class D2XXWrapper : IGeckoDevice
     {
         private FT_STATUS ConvertResult(DWORD result)
         {
