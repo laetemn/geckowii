@@ -1811,6 +1811,10 @@ namespace FTDIUSBGecko
             soffset += 0x80000000;
             soffset -= (UInt32)((viregs[0x1C] & 0xF) << 3);
 
+            // protect against empty images
+            if (0 == swidth || 0 == sheight)
+                return new Bitmap(1, 1);
+
             //Dump video data
             analyze = new MemoryStream();
             Dump(soffset, soffset + sheight * swidth * 2, analyze);

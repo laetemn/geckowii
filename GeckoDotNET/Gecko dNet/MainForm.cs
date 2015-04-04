@@ -441,7 +441,7 @@ namespace GeckoApp
                     if (attempt % 3 != 0)
                         continue;
                     retry =
-                        MessageBox.Show("Connection to the USB Gecko has failed!\n" +
+                        MessageBox.Show(this, "Connection to the USB Gecko has failed!\n" +
                          "Do you want to retry?", "Connection issue",
                          MessageBoxButtons.YesNo, MessageBoxIcon.Warning) ==
                          DialogResult.Yes;
@@ -507,7 +507,7 @@ namespace GeckoApp
                 {
                     DisconnectButton.Enabled = false;
                     CUSBGecko.Text = "Connect to Gecko";
-                    StatusCap.Text = "No USB Gecko connection availible!";
+                    StatusCap.Text = "No USB Gecko connection available!";
 
                     this.Text = "Gecko dotNET";
                 }
