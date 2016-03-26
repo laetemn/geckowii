@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="AlwaysOnTop" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="FPS" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">6.0</Value>
@@ -40,6 +40,9 @@
     </Setting>
     <Setting Name="ViewFloatsInHex" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Port" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">23947</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -195,7 +195,7 @@ namespace FTDIUSBGecko
             {
                 bool wasConnected = _clientSocket.Connected;
 
-                int server_port = 0xd6ec; // "dolphin gecko"
+                int server_port = GeckoApp.Properties.Settings.Default.Port; // 0x5BC9; // 0xd6ec; // "dolphin gecko"
                 int connection_attempt = 0;
                 while (!_clientSocket.Connected && (connection_attempt < 10))
                 {
